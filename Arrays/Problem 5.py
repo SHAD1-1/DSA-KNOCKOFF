@@ -27,6 +27,8 @@ for i in range(len(arr1)):
             arr1[i] = arr1[j]
             arr1[j] = temp
 
+
+
 # Ascending sort for arr2 (without built-in sort)
 for i in range(len(arr2)):
     for j in range(i + 1, len(arr2)):
@@ -38,3 +40,4 @@ for i in range(len(arr2)):
 print("\nAfter Sorting:")
 print("Array 1 (Descending):", arr1)
 print("Array 2 (Ascending):", arr2)
+
