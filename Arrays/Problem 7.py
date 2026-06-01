@@ -1,3 +1,4 @@
+#Find the 1st and 2nd minimum, 1st and 2nd maximum, and median of an array of size 11.
 arr = []
 
 # Take input
