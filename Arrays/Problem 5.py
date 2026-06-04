@@ -18,7 +18,6 @@ for i in range(10):
 print("Before Sorting:")
 print("Array 1:", arr1)
 print("Array 2:", arr2)
-
 # Descending sort for arr1 (without built-in sort)
 for i in range(len(arr1)):
     for j in range(i + 1, len(arr1)):

@@ -1,4 +1,4 @@
-# Create an integer array of size 10
+# Create an integer array of size 10 and see if it is sorted in ascending order, descending order, or not sorted at all.
 arr = []
 
 # Take input from the user
