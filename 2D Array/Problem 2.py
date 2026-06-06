@@ -24,4 +24,5 @@ for i in range(4):
     for j in range(3):
         row.append(a[i][j] - b[i][j])
     c.append(row)
-print(c)
+print("Matrix A:", a, "\nMatrix B:", b, "\nMatrix C:", c)
+
