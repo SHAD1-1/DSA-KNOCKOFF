@@ -2,7 +2,6 @@
 
 import random
 
-# Create matrix A (4 x 3)
 A = []
 for i in range(4):
     row = []
@@ -27,7 +26,7 @@ for i in range(4):
         for k in range(3):
             total = total + A[i][k] * B[k][j]
         row.append(total)
-    C.append(row)
+    C.append(row)                                   
 
 # Print matrices
 print("Matrix A:")
