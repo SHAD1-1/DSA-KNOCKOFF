@@ -1,4 +1,4 @@
-#_ Create two 4 by 3 integer matrices called A and B. Subtract A from B and store the resultant matrix in C.Print A, B and C matrices.
+#Create two 4 by 3 integer matrices called A and B. Subtract A from B and store the resultant matrix in C.Print A, B and C matrices.
 
 import random
 a = []
@@ -24,5 +24,6 @@ for i in range(4):
     for j in range(3):
         row.append(a[i][j] - b[i][j])
     c.append(row)
+
 print("Matrix A:", a, "\nMatrix B:", b, "\nMatrix C:", c)
 
