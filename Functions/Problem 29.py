@@ -1,12 +1,13 @@
 #Sum of coloumns
-def column_sum(matrix):
-    cols = len(matrix[0])
+def coloumn_sum(num):
+    cols =len(num[0])
 
     for j in range(cols):
         total = 0
-        for i in range(len(matrix)):
-            total += matrix[i][j]
+        for i in range(len(num)):
+            total += num[i][j]
+
         print(total)
 
-arr = [[1, 2, 3], [4, 5, 6]]
-column_sum(arr)
+arr = [[1,2,3],[4,5,6]]
+coloumn_sum(arr)

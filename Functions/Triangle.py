@@ -2,7 +2,8 @@
 
 def triangle(size, ch):
     for i in range(1, size + 1):
-        print(ch * i)
+        return ch * i
+    
 
 # Example
-triangle(5, "*")
+print(triangle(5, "*"))
