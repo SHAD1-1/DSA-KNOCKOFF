@@ -7,15 +7,32 @@ class Node:
 
 def numOfOccurrences(head, data):
     count = 0
-    temp = head
+    lst = head
 
-    while temp:
-        if temp.data == data:  
+    while lst:
+        if lst.data == data:  
             count += 1
-        temp = temp.next 
+        lst = lst.next 
         
     return count
 
+
+#Guys I have also used a for loop here cause why not :')
+
+def numOfOccurrencesFor(head, data):
+    count = 0
+    lst = head
+    arr = []
+
+    while lst:
+        arr.append(lst.data)
+        lst = lst.next
+
+    for i in arr:
+        if i == data:
+            count += 1
+
+    return count
 
 
 head = Node(1)

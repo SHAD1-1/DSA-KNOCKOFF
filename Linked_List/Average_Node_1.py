@@ -18,6 +18,7 @@ def getAverage(head):
     count = 0
     lst = head
 
+
     while lst:
         total += lst.data
         count += 1
