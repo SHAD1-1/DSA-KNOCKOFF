@@ -9,12 +9,14 @@ def numOfOccurrences(head, data):
     count = 0
     lst = head
 
+
     while lst:
         if lst.data == data:  
             count += 1
         lst = lst.next 
         
     return count
+
 
 
 #Guys I have also used a for loop here cause why not :')
@@ -35,6 +37,7 @@ def numOfOccurrencesFor(head, data):
     return count
 
 
+
 head = Node(1)
 head.next = Node(2)
 head.next.next = Node(1)
@@ -46,3 +49,4 @@ target = 1
 result = numOfOccurrences(head, target)
 
 print(f"The number {target} appears {result} times in the linked list.")
+
