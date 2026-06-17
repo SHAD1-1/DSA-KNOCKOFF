@@ -17,6 +17,26 @@ head.next.next.next = Node(8)
 
 
 
+class SinglyLinkedList:
+    def __init__(self):
+        self.head = None
+        self.size = 0
+
+    def append(self, data):
+        new_node = Node(data)
+
+        if self.head is None:
+            self.head = new_node
+        else:
+            current = self.head
+            while current.next is not None:
+                current = current.next
+            current.next = new_node
+
+        self.size += 1
+
+
+
 
 def is_identical(list1, list2):
   identical = True

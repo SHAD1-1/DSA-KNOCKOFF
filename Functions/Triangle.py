@@ -7,3 +7,4 @@ def print_triangle(num, ch):
 
 print_triangle(5, "*")
 
+

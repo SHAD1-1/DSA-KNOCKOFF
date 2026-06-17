@@ -25,6 +25,8 @@ A = Node(7)
 A.next = Node(6)
 A.next.next = Node(10)
 A.next.next.next = Node(11)
+A.next.next.next.next = Node(12)
+
 
 # List B: 7 -> 6 -> 10 -> 11
 B = Node(7)
