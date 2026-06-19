@@ -1,52 +1,52 @@
 class Node:
-    def __init__(self, data):
+    def __init__(self,data):
         self.data = data
         self.next = None
 
 
-class SinglyLinkedList:
+class Singly:
     def __init__(self):
         self.head = None
 
-    def sorted_insert(self, v):
-        newNode = Node(v)
+    def sort(self, value):
+        newNode = Node(value)
 
-        # Insert at the beginning
-        if self.head is None or v < self.head.data:
+        if self.head is None or value < self.head.data:
             newNode.next = self.head
             self.head = newNode
             return
 
-        temp = self.head
+        current = self.head
 
-        while temp.next != None and temp.next.data < v:
-            temp = temp.next
+        while current.next != None and current.next.data < value:
+            current = current.next
 
-        newNode.next = temp.next
-        temp.next = newNode
+        newNode.next = current.next
+        current.next = newNode
 
     def display(self):
-        temp = self.head
+        current = self.head
 
-        while temp != None:
-            print(temp.data, end=" ")
-            temp = temp.next
+        while current != None:
+            print(current.data, end=" ")
+            current = current.next
 
         print()
 
 
-# Create list: 3 -> 6 -> 7 -> 10
-sll = SinglyLinkedList()
+sll = Singly()
 
-sll.head = Node(3)
-sll.head.next = Node(6)
-sll.head.next.next = Node(7)
-sll.head.next.next.next = Node(10)
+sll.head = Node(2)
+sll.head.next = Node(3)
+sll.head.next.next = Node(4)
+sll.head.next.next.next = Node(6)
 
-print("Before insertion:")
+print("Before:")
 sll.display()
 
-sll.sorted_insert(5)
+sll.sort(5)
+sll.sort(1)
 
-print("After insertion:")
+
+print("After:")
 sll.display()
