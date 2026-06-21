@@ -12,15 +12,12 @@ class LinkedList:
     def insert(self, data):
         new_node = Node(data)
 
-
-        
-
         if self.head is None:
             self.head = new_node
             return
 
         current = self.head
-        while current.next is not None:
+        while current.next:
             current = current.next
 
         current.next = new_node
