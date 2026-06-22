@@ -1,7 +1,7 @@
 class Stack:
     def __init__(self):
         self.items = []
-        #Radwan
+        
 
     def push(self, item):
         self.items.append(item)
