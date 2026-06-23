@@ -36,3 +36,7 @@ for ch in text:
 while not stack.isEmpty():
     ch = stack.pop()
     print(ch, "->", ord(ch))
+
+
+    print(adit)
+    
