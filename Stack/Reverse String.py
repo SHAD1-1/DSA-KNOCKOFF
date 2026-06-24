@@ -38,5 +38,4 @@ while not stack.isEmpty():
     print(ch, "->", ord(ch))
 
 
-    print(adit)
     
