@@ -6,6 +6,7 @@ class Node:
 
 
 def numOfOccurrences(head, data):
+
     count = 0
     lst = head
 
@@ -49,4 +50,11 @@ target = 1
 result = numOfOccurrences(head, target)
 
 print(f"The number {target} appears {result} times in the linked list.")
+
+
+
+
+
+
+
 
