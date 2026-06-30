@@ -73,8 +73,17 @@ def avg(lst):
 print("Avg:",avg(usage))
 
 
-def second(lst):
-    
+def secondLargest(lst):
+    lar = lst[0]
+    smal = lst[0]
+
+    for i in lst:
+        if i >smal:
+            if i < lar:
+                i = smal
+
+    return smal
+
 
 
 
