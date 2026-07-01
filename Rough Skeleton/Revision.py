@@ -7,7 +7,7 @@ def count(lst):
 
     return count
 
-usage = [1,2,3,4,5,6,7,8,9,10]
+usage = [1,2,3,4,5,6,7,8,9,10,9]
 
 print(count(usage))
 
@@ -89,8 +89,33 @@ def secondLargest(lst):
 
     return smal
 
-print(secondLargest(usage))
+print("Second largest:",secondLargest(usage))
 
 
 
+
+def isArithmatic(lst):
+    if len(lst) <= 1:
+        return True
+    
+    common_diff = lst[1] - lst[0]
+
+    for i in range(1, len(lst)-1):
+        now = lst[i+1] - lst[i]
+        if now != common_diff:
+            return False
+        
+    return True
+
+
+def remove_dup(lst):
+    result = []
+    for i in lst:
+        if i not in result:
+            result.append(i)
+
+    return result
+
+
+print(remove_dup(usage))
 
