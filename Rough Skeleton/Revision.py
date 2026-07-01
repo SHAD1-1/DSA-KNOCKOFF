@@ -78,11 +78,18 @@ def secondLargest(lst):
     smal = lst[0]
 
     for i in lst:
-        if i >smal:
-            if i < lar:
-                i = smal
+        if i >lar:
+            smal = lar
+            lar = i
+        elif i > smal and i != lar:
+            smal = i
+
+        
+    
 
     return smal
+
+print(secondLargest(usage))
 
 
 
