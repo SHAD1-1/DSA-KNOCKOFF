@@ -105,4 +105,35 @@ def sort_stack(stk):
     return stk
 
 
+def removeAdjacentDuplicates(q):
+    result = Queue()
+    if q.isEmpty():
+        return result
+
+    last = q.peek() #5
+    result.enqueue(last)
+    q.dequeue()
+
+    while not q.isEmpty():
+        current = q.dequeue()
+        if current != last:
+            result.enqueue(current)
+            last = current
+
+    return result
+
+
+#Queue
+
+def someFunction(self):
+    current = self.head      # start at the beginning
+    result = ...              # a counter, sum, or list — whatever you're building
+    
+    while current is not None:      # walk until you fall off the end
+        # do something with current.data
+        current = current.next      # ALWAYS move forward, or infinite loop!
+    
+    return result
+
+
 
