@@ -4,15 +4,17 @@ class Node:
         self.next = None
         self.prev = None
 
+        #[10,20,30,40]
+
 
 class DoublyLinkedList:
     def __init__(self):
         self.head = None
+        
 
     # Insert at end (for creating the list)
     def addLast(self, value):
         newNode = Node(value)
-
         if self.head is None:
             self.head = newNode
             return

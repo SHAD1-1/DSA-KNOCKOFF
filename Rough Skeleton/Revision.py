@@ -117,5 +117,8 @@ def remove_dup(lst):
     return result
 
 
-print(remove_dup(usage))
+print("Removing duplicates: ",remove_dup(usage))
+
+
+
 

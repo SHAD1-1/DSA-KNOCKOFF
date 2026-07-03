@@ -135,5 +135,52 @@ def someFunction(self):
     
     return result
 
+def sumList(self):
+    current = self.head
+    total = 0         # what should this start as?
+    
+    while current is not None:
+        total += current.data               # what do you do to total, using current.data?
+        current = current.next
+    
+    return total
+
+def findMax(self):
+    current = self.head
+    result = self.head.data     # start with the first value, not 0
+    
+    while current is not None:
+        if current.data > result:
+            result = current.data          # what goes here?
+        current = current.next            # what goes here? (same as always)
+    
+    return result
 
 
+#####
+
+def isEqual(q1, q2):
+    aux1 = Queue()
+    aux2 = Queue()
+    equal = True
+    
+    if q1.size() != q2.size():
+        equal = False
+    
+    while not q1.isEmpty() and not q2.isEmpty():
+        v1 = q1.dequeue()
+        v2 = q2.dequeue()
+        
+        if v1 != v2:
+            equal = False
+        
+        aux1.enqueue(v1)
+        aux2.enqueue(v2)
+    
+    while not aux1.isEmpty():
+        q1.enqueue(aux1.dequeue())
+    
+    while not aux2.isEmpty():
+        q2.enqueue(aux2.dequeue())
+        
+    return equal
