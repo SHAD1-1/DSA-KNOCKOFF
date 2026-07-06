@@ -160,7 +160,7 @@ def findMax(self):
 #####
 
 def isEqual(q1, q2):
-    aux1 = Queue()
+    aux1 = Queue()## [1,2,3,4,5]
     aux2 = Queue()
     equal = True
     
@@ -168,7 +168,7 @@ def isEqual(q1, q2):
         equal = False
     
     while not q1.isEmpty() and not q2.isEmpty():
-        v1 = q1.dequeue()
+        v1 = q1.dequeue()  ##
         v2 = q2.dequeue()
         
         if v1 != v2:
