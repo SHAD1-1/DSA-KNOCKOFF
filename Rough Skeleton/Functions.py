@@ -184,3 +184,19 @@ def isEqual(q1, q2):
         q2.enqueue(aux2.dequeue())
         
     return equal
+
+
+def reverseK(q,k):
+    aux = Stack()
+
+    for i in range(k):
+        aux.push(q.dequeue())
+
+    while not aux.isEmpty():
+        q.enqueue(aux.pop())
+
+
+    for i in range(q.size()-k):
+        q.enqueue(q.dequeue())
+
+    return q
