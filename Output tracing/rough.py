@@ -5,7 +5,30 @@ for i in range(1, n+1):
             print('#', end=' ')
         else:
             print('.', end=' ')
+    print()
 
 
     def is_palindrome(lst):
-        x = lst[0]
+        lst = str(lst)
+
+        if lst == lst[::-1]:
+            return True
+
+        else:
+            return False
+        
+
+def is_palindromee(lst):
+    last = lst[-1]
+
+    for i in lst:
+        if lst[i] == last:
+            return True
+        
+        else:
+            return False
+        
+
+
+
+        
